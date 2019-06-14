@@ -1,2 +1,13 @@
 
+div.wrapper {
+	margin: 0 auto;
+	width: 50%;
+	height: 100%;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #F1F1F1;
+}
 
+div#weatherHere img {
+	width: 15px;
+}

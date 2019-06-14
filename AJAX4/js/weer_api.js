@@ -58,6 +58,7 @@ function showWeather2(weatherString) {
 	for (const [key, value] of Object.entries(weatherObject.liveweer[0])) {
 		debug ? console.log(`${key}: ${value}`) : ""; // debug naar console
 		completeData += key + " : " + value + "<br>"; // maakt string
+		console.log(completeData);
 		weatherHere.innerHTML = completeData; // string printen in browser
 	}
 }
@@ -85,6 +86,7 @@ function makeAjaxCall(url, methodType) {
 		}
 		debug ? console.log("request sent succesfully") : ""; // debug
 	});
+	return promiseObj;
 }
 
 function errorHandler(statusCode) {
